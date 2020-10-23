@@ -186,6 +186,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (!pressed_anything_else_layer) {
           register_code(KC_MHEN);
           unregister_code(KC_MHEN);
+          register_code(KC_LANG2);
+          unregister_code(KC_LANG2);
         }
       }
       return false;
@@ -200,6 +202,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (!pressed_anything_else_layer) {
           register_code(KC_HENK);
           unregister_code(KC_HENK);
+          register_code(KC_LANG1);
+          unregister_code(KC_LANG1);
         }
       }
       return false;
